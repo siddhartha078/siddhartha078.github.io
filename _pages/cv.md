@@ -1,16 +1,15 @@
 ---
-title: "Posts by Category"
+title: "Curriculum vitae"
 permalink: /cv/
 layout: single
 toc: true
 toc_label: "Table of Contents"
-toc_sticky: false
+toc_sticky: true
 author_profile: true
 ---
 
 
 # Contact Info
-#mail or direct url by adding <> at start nd end [siddharthadevasani20078@gmail.com](mailto:siddharthadevasani20078@gmail.com)
 SIDDARTHA DEVASANI  
 E-mail: <siddharthadevasani20078@gmail.com>  
 GitHub:  
