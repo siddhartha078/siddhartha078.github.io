@@ -1,27 +1,34 @@
-# Minimal Mistakes remote theme starter
+# Siddartha Devasani – Cybersecurity Portfolio 🛡️
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Welcome to my personal cybersecurity lab and learning journal!
 
-Contains basic configuration to get you a site with:
+This GitHub Pages site serves as a **portfolio**, **blog**, and **knowledge base** where I share my learning journey, lab simulations, tool walkthroughs, and certifications as an aspiring self-taught cybersecurity analyst.
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
-
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+🔗 **Live Site**: [https://siddhartha078.github.io](https://siddhartha078.github.io)
 
 ---
 
-## Troubleshooting
+## 🧠 About Me
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+I’m learning cybersecurity hands-on through YouTube, labs, and practical tools. I’ve experimented with:
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+- Packet capture & analysis using **Wireshark**
+- Port scanning with **Nmap**
+- Exploiting vulnerable VMs using **Metasploit**
+- Phishing simulations using **Zphisher** and **BlackEye**
+- Completed **Google’s Cybersecurity Certificate**
+
+I'm currently exploring platforms like TryHackMe and Hack The Box.
+
+---
+
+## 📁 Site Structure
+
+This website is powered by [Jekyll](https://jekyllrb.com) and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme.
+
+```bash
+📁 _posts/             # Blog posts with labs, tools, and writeups
+📁 _pages/             # Custom pages like About, Contact, Certifications
+📁 assets/             # Images, styling, fonts
+📄 index.html          # Homepage layout
+📄 _config.yml         # Site settings (theme, layout, plugins)
