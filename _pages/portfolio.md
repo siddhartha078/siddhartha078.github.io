@@ -1,16 +1,4 @@
 ---
-title: Portfolio
-layout: collection
-permalink: /portfolio/
-collection: portfolio
-entries_layout: grid
-author profile: false
-classes: wide
----
-
-Sample document listing for the collection `_portfolio`.
-
-#---
 title: "Foo Bar Identity"
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
 header:
