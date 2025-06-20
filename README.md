@@ -1,4 +1,4 @@
-# Siddartha Devasani – Cybersecurity Portfolio 🛡️
+# Siddartha Devasani – Cybersecurity Portfolio
 
 Welcome to my personal cybersecurity lab and learning journal!
 
@@ -8,7 +8,7 @@ This GitHub Pages site serves as a **portfolio**, **blog**, and **knowledge base
 
 ---
 
-## 🧠 About Me
+## About Me
 
 I’m learning cybersecurity hands-on through YouTube, labs, and practical tools. I’ve experimented with:
 
@@ -22,13 +22,13 @@ I'm currently exploring platforms like TryHackMe and Hack The Box.
 
 ---
 
-## 📁 Site Structure
+##  Site Structure
 
 This website is powered by [Jekyll](https://jekyllrb.com) and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme.
 
 ```bash
-📁 _posts/             # Blog posts with labs, tools, and writeups
-📁 _pages/             # Custom pages like About, Contact, Certifications
-📁 assets/             # Images, styling, fonts
-📄 index.html          # Homepage layout
-📄 _config.yml         # Site settings (theme, layout, plugins)
+ _posts/             # Blog posts with labs, tools, and writeups
+ _pages/             # Custom pages like About, Contact, Certifications
+ assets/             # Images, styling, fonts
+ index.html          # Homepage layout
+ _config.yml         # Site settings (theme, layout, plugins)
