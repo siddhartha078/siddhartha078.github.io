@@ -1,5 +1,11 @@
 ---
-title: "Foo Bar Identity"
+title: Portfolio
+layout: collection
+permalink: /portfolio/
+collection: portfolio
+entries_layout: grid
+author profile: false
+classes: wide
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
 header:
   image: /assets/images/foo-bar-identity.jpg
