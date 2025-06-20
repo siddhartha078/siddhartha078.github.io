@@ -1,9 +1,11 @@
 main:
   - title: "Blog"
     url: /blog/
+  - title: "CVs"
+    url: /cv/
   - title: "Categories"
     url: /categories/
-  - title: "CV"
-    url: /cv/
   - title: "Portfolio"
     url: /portfolio/
+##  - title: "Resume"
+##    url: 
