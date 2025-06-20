@@ -7,8 +7,6 @@ classes: wide
 author_profile: true
 ---
 
-## Objective
-
 Simulate a phishing attack using BlackEye on a local VM to understand how credential harvesting works.
 
 ---

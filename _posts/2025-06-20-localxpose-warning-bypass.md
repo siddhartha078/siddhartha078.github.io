@@ -7,6 +7,8 @@ classes: wide
 author_profile: true
 ---
 
+Observations found while trying Phising again
+
 ## Background
 
 >During a phishing lab simulation, I used **LocalXpose** to expose my local phishing page to the internet. While testing, I noticed that LocalXpose displays a **warning page** before users are redirected to suspicious-looking URLs.
