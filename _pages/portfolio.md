@@ -1,6 +1,10 @@
 ---
+title: Portfolio
+layout: collection
 permalink: /portfolio/
-title: "Portfolio"
+collection: portfolio
+entries_layout: grid
+classes: wide
 ---
 
-This is my portfolio
+Sample document listing for the collection `_portfolio`.
