@@ -4,7 +4,7 @@ permalink: /cv/
 layout: single
 toc: true
 toc_label: "Table of Contents"
-toc_sticky: true
+toc_sticky: false
 author_profile: true
 ---
 
