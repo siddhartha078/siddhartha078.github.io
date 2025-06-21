@@ -5,8 +5,7 @@ date: 2025-06-21
 categories: [Devlog, Projects, Python]
 author_profile: true
 header:
-  image: /assets/images/terminalimage1.png
-  teaser: /assets/images/terminalimage1.png
+  image: \assets\images\headerhandcric.png
 ---
 
 ## Why I Built This
