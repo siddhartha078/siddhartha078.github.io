@@ -1,6 +1,6 @@
 ---
 title: "Simulated Phishing Attack using BlackEye"
-date: 2025-06-20
+date: 2025-06-17
 categories: [Labs, Phishing]
 layout: single
 classes: wide
