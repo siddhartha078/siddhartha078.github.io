@@ -3,11 +3,8 @@ title: "Hand Cricket Game"
 excerpt: "A fun CLI hand cricket game built in Python using loops, conditionals, and random module. Toss, two innings, and results — all in the terminal!"
 header:
   image: /assets/images/headerhandcric.png
-  teaser: /assets/images/headerhandcric.png
 sidebar:
   - title: "Role"
-    image: /assets/images/logo.png
-    image_alt: "logo"
     text: "Solo Developer"
   - title: "Built With"
     text: "Python, Terminal (CLI)"
@@ -37,5 +34,7 @@ Hand Cricket is a simple CLI game where you play against a bot in a two-innings 
 > i.e the batsman and the bowler choose the same number 
 -  Score is compared at the end  
 -  Emojis add extra fun!
+
+Link to the game: [Google drive](https://drive.google.com/file/d/1HxpUrYM5LmfNC8ZOCDL3xvqZV9QgheCR/view?usp=sharing)
 
 {% include gallery caption="Gameplay screenshots from the terminal." %}

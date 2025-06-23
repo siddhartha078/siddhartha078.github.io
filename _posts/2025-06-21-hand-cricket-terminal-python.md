@@ -5,13 +5,13 @@ date: 2025-06-21
 categories: [Devlog, Projects, Python]
 author_profile: true
 header:
-  image: /assets/images/terminalimage1.png
-  teaser: /assets/images/terminalimage1.png
+  image: /assets/images/headerhandcric.png
+  
 ---
 
 ## Why I Built This
 
-I've recently been diving into Python, and while doing random beginner projects, I wanted to build something that I actually played as a kid — like **Hand Cricket*
+I've recently been diving into Python, and while doing random beginner projects, I wanted to build something that I actually played as a kid — like **Hand Cricket**
 
 So I ended up creating a small terminal game where I (the user) face off against a bot in a match of tosses, batting, bowling, and randomness.
 
@@ -26,7 +26,7 @@ It’s a basic **command-line cricket match** between me and a bot:
 > You choose odd or even and then choose a number. If sum of the bot's choice number and the number you chose, is even, the person who chose even at the start will win the toss
 - Option to **bat or ball**
 - You keep hitting until you're out (when numbers match)
-> i.e the batsman and the bowler choose the same number
+> i.e the batsman and the bowler has to choose the same number
 - Two innings: whoever has more score wins
 
 It has:
@@ -43,3 +43,6 @@ I didn’t use any advanced libraries. Just:
 
 ```python
 import random
+```
+
+Check my portfolio for the link: [Portfolio](/portfolio/)
