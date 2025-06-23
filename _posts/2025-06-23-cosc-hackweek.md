@@ -1,5 +1,5 @@
 ---
-title: "Bypassing LocalXpose's Phishing Warning Page"
+title: "First Hackathon/Hackweek"
 date: 2025-06-23
 categories: [Hackathon, Python, Github]
 layout: single
