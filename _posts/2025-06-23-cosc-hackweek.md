@@ -55,7 +55,7 @@ I didn't know how to do this, hence asked chatgpt for help.
 ---
 The fourth one was an easy python code. It was to make a CLI Die using random module and mimic its rolling by adding a time delay.
 
->## 3. CLI Dice Roller
+>## 4. CLI Dice Roller
 >
 > > Using Python, I built a basic command-line dice roller that simulates a real dice roll.  
 > > - Uses the `random` module to generate values from 1 to 6  
