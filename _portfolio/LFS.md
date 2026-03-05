@@ -19,7 +19,6 @@ The process starts by using a host Linux system to compile a **temporary cross-c
 Once that environment was ready, I chrooted into the new partition and compiled every essential package from scratch — **from the shell to the core system libraries**. This included manually configuring the **Linux Kernel**, hand-picking drivers for my specific hardware, and installing a bootloader to bring the whole handcrafted system to life.
 
 
-
 > #### Benefits of making an LFS
 -  LFS teaches people how a Linux system works internally.
 -  Building LFS produces a very compact Linux system.  
