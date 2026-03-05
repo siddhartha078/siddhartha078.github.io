@@ -4,8 +4,6 @@ excerpt: "A fun CLI hand cricket game built in Python using loops, conditionals,
 header:
   image: /assets/images/headerhandcric.png
 sidebar:
-  - title: "Role"
-    text: "Solo Developer"
   - title: "Built With"
     text: "Python, Terminal (CLI)"
   - title: "Features"
