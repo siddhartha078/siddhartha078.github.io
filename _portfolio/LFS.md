@@ -10,7 +10,7 @@ sidebar:
     text: "Extremely flexible, completely customizable, built from the ground up."
 ---
 
-LFS is like the skeleton of a house, but it's up to us to install plumbing, electrical outlets, kitchen, bath, wallpaper, etc. We have the ability to turn it into whatever type of system we need it to be, customized completely for ourselfs.
+LFS is like the skeleton of a house, but it's up to us to install plumbing, electrical outlets, kitchen, bath, wallpaper, etc. We have the ability to turn it into whatever type of system we need it to be, customized completely for ourselves.
 
 ### How I built it
 
