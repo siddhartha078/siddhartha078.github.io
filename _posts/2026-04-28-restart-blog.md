@@ -1,10 +1,10 @@
 ---
 title: "Restarting Blog – Back to Learning"
 date: 2026-04-28
-categories: [Python]
 layout: single
 classes: wide
 author_profile: true
+tags: [python, cryptography, ctf]
 ---
 
 Restarting the blog, Learned some new things!!
