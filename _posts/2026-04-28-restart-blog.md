@@ -1,7 +1,7 @@
 ---
 title: "Restarting Blog – Back to Learning"
 date: 2026-04-28
-categories: [Learn]
+categories: [Python]
 layout: single
 classes: wide
 author_profile: true
@@ -32,6 +32,8 @@ It covered a wide range of foundational cryptography concepts, including:
 - Why reusing the same key across different contexts is dangerous
 The module consisted of 10 lessons, each progressively getting deeper into the topic.  
 The final challenge was a bit tricky—it took me a few minutes to figure it out—but solving it felt really satisfying.
+
+![Introduction to CryptoHack](/assets/images/cryptohack.png "Introduction to CryptoHack")
 
 After completing CryptoHack, I moved on to practicing for CTFs.
 Even though I already had some knowledge, I decided to restart from the basics—and that turned out to be a good decision. I ended up learning things I had previously overlooked.
