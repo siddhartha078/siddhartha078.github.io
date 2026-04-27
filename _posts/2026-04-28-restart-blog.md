@@ -7,7 +7,7 @@ classes: wide
 author_profile: true
 ---
 
-Restarting the blog, Learned some new things!!
+#Restarting the blog, Learned some new things!!
 
 **Ps:** Couldn't write blog due to some personal issues. Forgot to make a blog about LFS😭
 ---
