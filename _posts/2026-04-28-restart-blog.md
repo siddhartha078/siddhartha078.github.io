@@ -9,7 +9,6 @@ author_profile: true
 
 Restarting the blog, Learned some new things!!
 
-**Ps:** Couldn't write blog due to some personal issues. Forgot to make a blog about LFS😭
 ---
 
 ## What I Learned Today
@@ -40,6 +39,7 @@ Even though I already had some knowledge, I decided to restart from the basics�
 Right now, I’m working on:
 - **Linux Lunarium Dojo (Module 3)** on pwn.college
 
+Ps: Couldn't write blog due to some personal issues. Forgot to make a blog about LFS😭
 ---
 
 ## Resources Used
