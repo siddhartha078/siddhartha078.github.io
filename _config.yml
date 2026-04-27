@@ -25,6 +25,7 @@ twitter_username: username
 github_username: siddhartha078
 minimal_mistakes_skin: neon
 search: true
+future: true
 
 # Build settings
 markdown: kramdown
