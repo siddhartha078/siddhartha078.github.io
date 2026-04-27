@@ -4,7 +4,7 @@ date: 2026-04-28
 layout: single
 classes: wide
 author_profile: true
-tags: [python, cryptography, ctf]
+categories: [python, cryptography, ctf]
 ---
 
 Restarting the blog, Learned some new things!!
