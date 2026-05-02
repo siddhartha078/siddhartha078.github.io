@@ -7,12 +7,12 @@ author_profile: true
 categories: [siem, linux, networking]
 ---
 
-## Progress this week:
+## Progress this week
 
 
 #### Completed the **Linux Luminarium Dojo** at pwn.college
 
-The Dojo had around 130 challenges in all which gave me good idea of linux command sets and how to use them in different cases. The **Silly Shenanigans module** was kind of a headache but I did eventually got through it.
+I got the linux badge (penguin) for completing it. The Dojo had around 130 challenges in all which gave me good idea of linux command sets and how to use them in different cases. The **Silly Shenanigans module** was kind of a headache but I did eventually got through it.
 
 ![Linux Luminarium](/assets/images/linuxluminaruim.png)
 
@@ -36,7 +36,6 @@ Wazuh Log:
 
 Learned about Process Management, the different states a process can be in etc and also learned about IPv4 Adresses, Subnetting, Supernetting etc.
 
----
 
 ## Resources Used
 
