@@ -49,4 +49,4 @@ Simulate a phishing attack using BlackEye on a local VM to understand how creden
 
 - [BlackEye GitHub](https://github.com/thelinuxchoice/blackeye)
 - [Zphisher](https://github.com/htr-tech/zphisher)
-- My writeups at [Projects](/posts/)
+- My writeups at [Blogs](/posts/)
