@@ -18,9 +18,10 @@ title: Siddartha Devasani
 #masthead_title: "Siddartha Devasani"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to my personal cybersecurity lab and learning journal!
+  This GitHub Pages site serves as a **portfolio**, **blog**, and **knowledge base** where I share my learning journey, lab simulations, tool walkthroughs, and certifications as an aspiring self-taught cybersecurity analyst.
+
+
 twitter_username: username
 github_username: siddhartha078
 minimal_mistakes_skin: neon

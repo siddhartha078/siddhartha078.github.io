@@ -1,8 +1,8 @@
 ---
 title: "Linux From Scratch"
 excerpt: "Built a fully functional Linux system entirely from source code, gaining a deep understanding of the Linux ecosystem."
-header:
-  image: /assets/images/LFS.png
+#header:
+#  image: /assets/images/LFS.png
 sidebar:
   - title: "Built With"
     text: "GCC Toolchain, Bash, Linux Kernel"

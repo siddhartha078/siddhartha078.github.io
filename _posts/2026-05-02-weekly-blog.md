@@ -12,15 +12,15 @@ categories: [siem, linux, networking]
 
 #### Completed the **Linux Luminarium Dojo** at pwn.college
 
-I got the linux badge (penguin) for completing it. The Dojo had around 130 challenges in all which gave me good idea of linux command sets and how to use them in different cases. The **Silly Shenanigans module** was kind of a headache but I did eventually got through it.
+- I got the linux badge (penguin) for completing it. The Dojo had around 130 challenges in all which gave me good idea of linux command sets and how to use them in different cases. The **Silly Shenanigans module** was kind of a headache but I eventually got through it.
 
 ![Linux Luminarium](/assets/images/linuxluminaruim.png)
 
 #### Successfully setup a **Home Lab** in VirtualBox
 
-Used Kali linux and Ubuntu Server LTS 24.04 as the machines
+- Used Kali linux and Ubuntu Server LTS 24.04 as the machines
 
-#### Successfully setup **Wazuh** and added a simple rule and tested it.
+#### Successfully setup **Wazuh** and added a simple rule and tested it
 
 - Wazuh is an Open-Source SIEM tool which manages all the security related events happening in your pc, sorted into different threat levels ranging from 0 - 16. I have installed it in my Ubuntu Server.
 - I wrote a custom active response rule which blocks IP for 5 minutes if someone fails to ssh into the device for more than 8 times continuously. Mostly Bruteforce attacks happen this way and this is a good measure to minimize that. I tested it using **Hydra** tool in Kali Linux to the Ubuntu Server.
@@ -34,7 +34,7 @@ Wazuh Log:
 
 #### Started learning OS and Networking
 
-Learned about Process Management, the different states a process can be in etc and also learned about IPv4 Adresses, Subnetting, Supernetting etc.
+- Learned about Process Management, the different states a process can be in etc and also learned about IPv4 Adresses, Subnetting, Supernetting etc.
 
 
 ## Resources Used

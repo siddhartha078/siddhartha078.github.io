@@ -1,8 +1,8 @@
 ---
 title: "Hand Cricket Game"
 excerpt: "A fun CLI hand cricket game built in Python using loops, conditionals, and random module. Toss, two innings, and results — all in the terminal!"
-header:
-  image: /assets/images/headerhandcric.png
+#header:
+#  image: /assets/images/headerhandcric.png
 sidebar:
   - title: "Built With"
     text: "Python, Terminal (CLI)"
