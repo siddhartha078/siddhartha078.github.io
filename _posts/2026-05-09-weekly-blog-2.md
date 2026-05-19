@@ -4,7 +4,7 @@ date: 2026-05-09
 layout: single
 classes: wide
 author_profile: true
-categories: [siem, linux, networking]
+categories: [OS, networking]
 ---
 
 ## Progress this week
@@ -16,7 +16,7 @@ categories: [siem, linux, networking]
 
 #### Started learning OS and Networking
 
-- Learnt bout things like Scheduling Times, Scheduling Algorithms, Types of Algorithms, Gantt Chart, Tie Breakers etc
+- Learnt about things like Scheduling Times, Scheduling Algorithms, Types of Algorithms, Gantt Chart, Tie Breakers etc
 
 
 ## Resources Used
