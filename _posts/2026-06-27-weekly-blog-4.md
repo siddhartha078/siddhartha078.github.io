@@ -12,7 +12,6 @@ categories: [siem, linux, privilege-escalation, home-lab]
 
 *Detection Engineering | MITRE ATT&CK T1548.001 | Wazuh | auditd | Home Lab*
 
----
 
 
 ## What I Was Trying to Do
@@ -43,7 +42,7 @@ Instead, I got a full dump of every password hash on the machine. Every single o
 
 I sat there for a moment just staring at it.
 
----
+
 
 ## Tracing It Back to the Typo
 
@@ -61,7 +60,6 @@ So when the low-privilege test user ran `cat`, it wasn't running as that user. I
 
 A single mistyped character turned one of the most basic Unix utilities into a privilege escalation vector.
 
----
 
 ## What SUID Actually Is
 
@@ -80,7 +78,6 @@ ls -la /usr/bin/cat
 
 This vulnerability is tracked in MITRE ATT&CK as **T1548.001 — Abuse Elevation Control Mechanism: Setuid and Setgid**.
 
----
 
 ## Should Wazuh Have Caught This?
 
@@ -98,7 +95,6 @@ This is a critical concept that gets glossed over in a lot of beginner SIEM cont
 
 To detect filesystem-level activity — file reads, writes, process executions — you need the Linux kernel's own audit subsystem: **auditd**.
 
----
 
 ## auditd
 
@@ -127,7 +123,6 @@ Breaking that down:
 
 Now when `cat /etc/shadow` runs — SUID or otherwise — auditd generates a log entry. Wazuh picks it up. And with the right rule, an alert fires.
 
----
 
 ## Writing the Wazuh Detection Rule
 
@@ -156,7 +151,6 @@ Breaking it down:
 
 This is the part that matters for a Detection Engineering portfolio: not just "Wazuh alerted on something," but "I identified a gap in detection coverage, configured the right log source, and wrote a rule that maps to a specific ATT&CK technique with appropriate severity."
 
----
 
 ## Reproducing the Attack with Detection Active
 
@@ -184,7 +178,6 @@ The alert contained:
 
 That last detail is the key forensic signal: **UID ≠ EUID**. A normal user running a normal binary will have matching UID and EUID. When SUID is in play, the EUID is elevated. auditd captures both. That discrepancy alone is detectable without even needing to watch specific files.
 
----
 
 ## Cleanup and Hardening
 
@@ -209,7 +202,6 @@ Any binary in that list that shouldn't be there is a potential escalation path. 
 
 **Add a broader Wazuh rule for SUID execution** — not just shadow access, but any case where UID ≠ EUID during execution. That catches SUID abuse on any binary, not just cat.
 
----
 
 ## What This Taught Me About Detection Engineering
 
@@ -228,7 +220,6 @@ Writing the Wazuh rule meant understanding what auditd actually logs, what field
 Mapping to T1548.001 isn't just a label for the resume. It situates this technique within a broader kill chain. SUID abuse typically follows initial access and precedes lateral movement or data access. Knowing the context makes you better at anticipating what comes next.
 
 
----
 
 ## What's Next
 
@@ -245,7 +236,7 @@ Each stage gets its own custom Wazuh detection rule, ATT&CK mapping, and writeup
 
 That's it for this week!! See you all next week!
 
-**Couldn't practise for cybersecurity due to semester exams, nontheless will be consistent from now!!**
+**PS: Couldn't practise for cybersecurity due to semester exams, nontheless will be consistent from now!!**
 
 ## Resources Used
 
