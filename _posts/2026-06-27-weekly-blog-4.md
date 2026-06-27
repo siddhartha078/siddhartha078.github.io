@@ -4,6 +4,7 @@ date: 2026-06-27
 layout: single
 classes: wide
 author_profile: true
+reddit_url: https://www.reddit.com/r/cybersecurityindia/comments/1uh2zf4/weekly_blog_4/
 categories: [siem, linux, privilege-escalation, home-lab]
 ---
 
