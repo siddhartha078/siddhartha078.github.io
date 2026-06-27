@@ -1,0 +1,128 @@
+{% if page.reddit_url %}
+<div class="page__comments">
+  <h4 class="page__comments-title">
+    Comments
+    <span style="font-weight: normal; font-size: 0.8em; margin-left: 0.4em;">
+      — via Reddit &nbsp;·&nbsp;
+      <a href="{{ page.reddit_url }}" target="_blank" rel="noopener noreferrer">
+        Join the discussion ↗
+      </a>
+    </span>
+  </h4>
+
+  <!-- Sort controls -->
+  <div style="margin-bottom: 1em; font-size: 0.85em;">
+    Sort by:
+    <button onclick="loadComments('top')"    id="btn-top"    style="margin-left:0.4em; cursor:pointer;">Top</button>
+    <button onclick="loadComments('new')"    id="btn-new"    style="margin-left:0.3em; cursor:pointer;">New</button>
+    <button onclick="loadComments('best')"   id="btn-best"   style="margin-left:0.3em; cursor:pointer;">Best</button>
+  </div>
+
+  <div id="reddit-comments-list">
+    <p><em>Loading comments…</em></p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var REDDIT_URL = "{{ page.reddit_url }}";
+
+  /* ── Render a single comment (with optional nested replies) ── */
+  function renderComment(c, depth) {
+    if (c.kind !== "t1" || c.data.stickied) return "";
+    depth = depth || 0;
+
+    var d      = c.data;
+    var date   = new Date(d.created_utc * 1000).toLocaleDateString(undefined, {
+                   year: "numeric", month: "short", day: "numeric"
+                 });
+    var score  = d.score === 1 ? "1 point" : d.score + " points";
+    var body   = d.body
+                   .replace(/&/g, "&amp;")
+                   .replace(/</g, "&lt;")
+                   .replace(/>/g, "&gt;")
+                   .replace(/\n/g, "<br>");
+
+    /* Nested replies (one level deep to keep it readable) */
+    var replies = "";
+    if (depth === 0 && d.replies && d.replies.data && d.replies.data.children) {
+      var children = d.replies.data.children.filter(function (r) {
+        return r.kind === "t1" && !r.data.stickied;
+      }).slice(0, 3); /* show up to 3 top replies */
+
+      if (children.length) {
+        replies = '<div style="margin-left:1.5em; border-left:2px solid #eee; padding-left:0.8em; margin-top:0.6em;">'
+                + children.map(function (r) { return renderComment(r, 1); }).join("")
+                + '</div>';
+      }
+    }
+
+    return '<div class="list__item" style="'
+         +   'border-left: 3px solid ' + (depth === 0 ? "#FF4500" : "#ddd") + '; '
+         +   'padding: 0.6em 1em; '
+         +   'margin: ' + (depth === 0 ? "1.2em" : "0.6em") + ' 0; '
+         +   'background: transparent;'
+         + '">'
+         +   '<p style="margin: 0 0 0.35em;">'
+         +     '<strong>u/' + d.author + '</strong>'
+         +     '<span class="page__meta" style="margin-left: 0.6em; font-size: 0.8em;">'
+         +       '▲ ' + score + ' &nbsp;·&nbsp; ' + date
+         +     '</span>'
+         +   '</p>'
+         +   '<p style="margin: 0; line-height: 1.55;">' + body + '</p>'
+         +   replies
+         + '</div>';
+  }
+
+  /* ── Fetch and render ── */
+  window.loadComments = function (sort) {
+    sort = sort || "top";
+
+    /* Highlight active button */
+    ["top","new","best"].forEach(function (s) {
+      var btn = document.getElementById("btn-" + s);
+      if (btn) btn.style.fontWeight = (s === sort) ? "bold" : "normal";
+    });
+
+    var container = document.getElementById("reddit-comments-list");
+    container.innerHTML = "<p><em>Loading…</em></p>";
+
+    fetch(REDDIT_URL + ".json?limit=100&sort=" + sort + "&raw_json=1")
+      .then(function (r) {
+        if (!r.ok) throw new Error("Network error");
+        return r.json();
+      })
+      .then(function (data) {
+        var comments = data[1].data.children.filter(function (c) {
+          return c.kind === "t1" && !c.data.stickied;
+        });
+
+        if (!comments.length) {
+          container.innerHTML =
+            "<p>No comments yet. "
+            + "<a href='" + REDDIT_URL + "' target='_blank' rel='noopener'>Be the first on Reddit ↗</a>"
+            + "</p>";
+          return;
+        }
+
+        container.innerHTML = comments.map(function (c) {
+          return renderComment(c, 0);
+        }).join("");
+      })
+      .catch(function () {
+        container.innerHTML =
+          "<p>Couldn't load comments. "
+          + "<a href='" + REDDIT_URL + "' target='_blank' rel='noopener'>View on Reddit ↗</a>"
+          + "</p>";
+      });
+  };
+
+  /* Auto-load on page ready */
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () { window.loadComments("top"); });
+  } else {
+    window.loadComments("top");
+  }
+})();
+</script>
+{% endif %} 
