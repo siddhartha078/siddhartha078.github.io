@@ -4,14 +4,13 @@ date: 2026-06-27
 layout: single
 classes: wide
 author_profile: true
+comments: true
 reddit_url: https://www.reddit.com/r/cybersecurityindia/comments/1uh2zf4/weekly_blog_4/
 categories: [siem, linux, privilege-escalation, home-lab]
 ---
 
 
 # How a Typo Led Me to Discover a Privilege Escalation Vulnerability — and Why Wazuh Didn't Catch It (At First)
-
-*Detection Engineering | MITRE ATT&CK T1548.001 | Wazuh | auditd | Home Lab*
 
 
 
