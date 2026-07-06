@@ -5,7 +5,7 @@ layout: single
 classes: wide
 author_profile: true
 comments: true
-reddit_url: 
+reddit_url: https://www.reddit.com/r/cybersecurityindia/s/Bj9uxC4YSN
 categories: [siem, linux, privilege-escalation, home-lab]
 ---
 
