@@ -1,6 +1,6 @@
 ---
 title: "Weekly Blog 6"
-date: 2026-07-21
+date: 2026-07-20
 layout: single
 classes: wide
 author_profile: true
