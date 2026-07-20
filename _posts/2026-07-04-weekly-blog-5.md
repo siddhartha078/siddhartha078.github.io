@@ -131,3 +131,9 @@ In practice, auditd is faster and more detailed for investigation. FIM is a usef
 Cron-based persistence is simple to execute but easy to miss if you're not specifically watching cron directories. The files are designed to blend in. A name like `sysupdate` in `/etc/cron.d/` looks routine at first glance. This is exactly the kind of thing that shows up in post-breach forensics months after the initial compromise.
 
 From a detection standpoint, watching `/etc/cron.d/` with auditd and FIM together gives you both the action-level and the file-level view, which makes triage much faster. The auditd alert tells you who and how. The FIM alert tells you what changed. Together they're a solid detection layer for this technique.
+
+
+## Resources Used
+
+- [Wazuh](https://wazuh.com/)
+- My writeups at [Blogs](/posts/)
