@@ -5,7 +5,7 @@ layout: single
 classes: wide
 author_profile: true
 comments: true
-reddit_url: 
+reddit_url: https://www.reddit.com/r/cybersecurityindia/comments/1v1p5ez/weekly_blog_6/
 categories: [AWS, Cloud Service]
 ---
 
